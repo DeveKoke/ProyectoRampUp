@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,200;0,500;1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap');
+
+:root{
+    --main-dark-green: rgb(3, 60, 73);
+    --main-white: #ffffff;
+    --main-teal: #12dede;
+    --main-list-style: none;
+}
+*{  
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Work Sans';
+    scroll-behavior: smooth;
+}
+body{
+    background: linear-gradient(180deg, rgb(3, 60, 73) 0%, rgba(24, 114, 93, 0.9) 100%);
+    color: var(--main-white);
+    font-weight: 200;
+    
+}
+
+
+/* *BARRA NAVEGACION */
+nav{
+    background-color: rgba(3,62,74,0.1);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 4%;
+    padding-top: 3%;
+}
+nav li{
+    font-weight: 200;
+    list-style: none;
+    margin: 30px 0px;
+    font-size: small;
+}
+h1{
+    margin: 7%;
+}
+h3{
+    margin: 7% 0% 2%;
+}
+h4{
+    margin: 10% 5% 3%;
+}
+a{
+    font-size: large;
+    text-decoration: none;
+    margin: 30px 10px 20px 0px ;
+    font-size: small;
+
+}
+#name{
+    color: var(--main-teal);
+    margin-top: 25px;
+    font-family: 'RocknRoll One';
+    font-size: x-large;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-right: 0%;
+    
+}
+a:link{
+    color: var(--main-white);
+}
+a:visited{
+    color: var(--main-teal);
+}
+a:hover{
+    color: var(--main-teal);
+}
+p a{
+    margin: 0;
+    font-size: small;
+
+}
+p{
+    text-align: justify;
+    margin-bottom: 15px;
+    font-size: small;
+    text-indent: 14px;
+}
+p img{
+    width: 15px;
+}
+#hobbies{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom:120px;
+}
+section{
+    margin-left:7%;
+    margin-right: 7%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+section li{
+    font-size: small;
+    margin: 5px 0px;
+    list-style: none;
+
+}
+a img{
+    width: 40px;
+    margin: 15px 15px;
+}
+
+
+
+/* *MEDIA QUERYS */
+@media screen and (min-width: 400px){
+    a{
+        font-size: large;
+    }
+    nav{
+        padding: 0% 5%;
+    }
+    h4{
+        margin: 6% 5% 1%;
+    }
+    nav li{
+        margin: 30px 7px;
+    }
+}

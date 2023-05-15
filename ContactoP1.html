@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title> Contacto - Jorge B.E. </title>
+    <meta charset="utf-8">
+    <meta  name ="viewport" content="width=device-width", initial-scale="1.0"> 
+    <meta  name ='Jorge Blas Espejo' content="página personal Jorge Blas Espejo">  
+    <link href="stylepagecontact.css" rel="stylesheet" type media >
+</head>
+    <body>
+        <header>
+            <nav>
+                <a href="indexP1.html" id="name">JORGE</a>
+                <ul>
+                    <li><a href="BioP1.html">Bio</a></li>
+                    <li><a href="PortfolioP1.html">Portfolio</a></li>
+                    <li><a href="ContactoP1.html">Contacto</a></li>                        
+                </ul>
+            </nav>            
+        </header>
+        <main>
+            <section>
+                <h1>Contacto</h1>
+                <p>Si quieres contactar conmigo puedes rellenar el siguiente formulario...</p>
+                <form class="contactForm">
+                    <label name="nombre">Nombre:*
+                        <input name="names" type="text" placeholder="nombre" required autocomplete="on" ></label>
+                        <div id="error_name">
+                           * Debes proporcionarme un nombre para contactar contigo.
+                        </div>
+                    <label name="apellidos">Apellidos:*
+                        <input name="surname" type="text" placeholder="apellidos" required autocomplete="on"></label>
+                        <div id="error_surname">
+                            * Debes proporcionarme al menos un apellido válido para saber quién eres.
+                        </div>
+                    <label name="email">Tu email:*
+                        <input name="email" type="email" placeholder="nombre@mail.com" required autocomplete="on"></label>
+                        <div id="error_email">
+                            * Debes proporcionarme un email válido para poder responderte.
+                        </div>
+                    <label name="reason">¿Cuál es la razón de tu contacto?:    
+                        <input name="reason" type="radio" value="trabajo">trabajo  // <input name="reason" type="radio" value="ocio"> ocio</label>
+                    <label>Mensaje:*
+                        <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Escríbeme" required></textarea></label>
+                        <div id="error_message">
+                            * Necesito que me cuentes la razón de tu contacto.
+                        </div>
+                    <label>Me encantaría saber cómo has dado conmigo:</label>
+                        <select name="meet" >
+                            <option value="">--Selecciona una opción--</option>
+                            <option value="instagram">Istagram</option>
+                            <option value="linkedin">linkedin</option>
+                            <option value="twitter">Twitter</option>
+                            <option value="google">Google</option>
+                            <option value="infojobs">InfoJobs</option>
+                            <option value="otros">Otros</option>
+                        </select>
+                    <label name="file" style="margin-left: 30px;">Si deseas mandarme alguna fotografía sobre un diseño web: 
+                        <input name="file" type="file" accept=".jpg" multiple > </label>
+                    <div id="button">
+                        <input type="submit" class="button" value="ENVIAR">
+                        <input type="reset" value="RESTABLECER CAMPOS" class="button">
+                    </div>
+                </form>
+                <div class="contactLast">
+                    <p>...escribirme a mi email personal...</p>
+                    <p><b style="font-size: large;">jorge.be86@gmail.com</b> </p>
+                    <p>...o a través de mis redes sociales.</p>
+                </div>
+            </section> 
+            <section>
+                <div class="socialMedia">
+                    <a href="https://www.instagram.com/jrg.bles/" target="_blank"><img src="images/ICinstagram.png" alt="Instagram"> </a>
+                    <a href="https://www.linkedin.com/in/jorge-blas-espejo-61b291113/?trk=nav_responsive_tab_profile" target="_blank"><img src="images/IClinkedin.png" alt="Linkeding"></a>
+                    <a href="https://twitter.com/charlitoplin" target="_blank"><img src="images/ICtwitter.png" alt="Twitter"></a>
+                    <a href="https://github.com/DeveKoke" target="_blank"><img src="images/ICgithub.png" alt="Github"></a>
+                </div>
+            </section>
+        </main>
+        <footer></footer>
+        <script src="index.js"></script>
+    </body>
+</html>

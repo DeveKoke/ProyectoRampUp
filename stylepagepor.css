@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,200;0,500;1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap');
+
+:root{
+    --main-dark-green: rgb(3, 60, 73);
+    --main-white: #ffffff;
+    --main-teal: #12dede;
+    --main-list-style: none;
+
+}
+*{  
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Work Sans';
+ 
+}
+body{
+    background: linear-gradient(180deg, rgb(3, 60, 73) 0%, rgba(24, 114, 93, 0.9) 100%);
+    color: var(--main-white);
+    font-weight: 200;
+    
+}
+
+/* *BARRA DE NAVEGACION* */
+nav{
+    background-color: rgba(3,62,74,0.1);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 4%;
+    padding-top: 3%;
+}
+nav li{
+    font-weight: 200;
+    list-style: none;
+    margin: 30px 3px;
+    font-size: small;
+}
+h1{
+    margin: 7%;
+}
+h2{
+    margin-top: 17px;
+} 
+h3{
+    margin: 7% 0% 2%;
+}
+a{
+    font-size: large;
+    text-decoration: none;
+    margin: 30px 10px 20px 0px ;
+    font-size: small;
+
+}
+a:link{
+    color: var(--main-white);
+}
+a:visited{
+    color: var(--main-teal);
+}
+a:hover{
+    color: var(--main-teal);
+}
+#name{
+    color: var(--main-teal);
+    margin-top: 25px;
+    font-family: 'RocknRoll One';
+    font-size: x-large;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-right: 0%;
+    
+}
+
+/* *MAIN* */
+main{
+width: 75%;
+margin: auto;
+}
+section{
+    margin-bottom: 40px;
+}
+#repositorio{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column
+}
+#repositorio a{
+    margin: 10px 0px;
+}
+a img{
+    width: 100%;
+    border-radius: 9px;
+    border: solid 3px var(--main-teal);
+    max-width: 780px;
+}
+p{
+    text-align: justify;
+    margin: 15px 0;
+    font-size: small;
+    text-indent: 14px;
+}
+#galeria{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+
+}
+#galeria img{
+    width: 75%;
+    border-radius: 6px;
+    margin: 7px;
+    max-width: 300px;
+
+}
+#galeria .picgaleria{
+    max-width: 210px;
+}
+
+
+/* *MEDIA QUERYS */
+@media screen and (min-width: 400px){
+    a{
+        font-size: large;
+    }
+    nav{
+        padding: 0% 5%;
+    }
+    nav li{
+        margin: 30px 7px;
+    }
+
+}
+@media screen and (min-width: 500px){
+    #repositorio{
+   align-items: center;
+        }
+    
+}
+

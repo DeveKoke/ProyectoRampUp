@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,200;0,500;1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap');
+
+:root{
+    --main-dark-green: rgba(3,66,75);
+    --main-white: #ffffff;
+    --main-teal: #12dede;
+
+}
+*{
+    box-sizing: border-box;
+    font-family: 'Work Sans';
+    margin: 0;
+    padding: 0;
+
+}
+
+/* ** BARRA DE NAVEGACIÓN*/
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 5%;
+    padding-top: 3%;
+}
+/* a{
+    font-size: small;
+    text-decoration: none;
+    margin: 30px 0 20px 60px ;
+
+} */
+a{
+    font-size: large;
+    text-decoration: none;
+    margin: 30px 10px 20px 0px ;
+    font-size: small;
+
+}
+a:link{
+    color: var(--main-white);
+}
+a:visited{
+    color: var(--main-teal);
+}
+a:hover{
+    color: var(--main-teal);
+}
+#name{
+    color: var(--main-teal);
+    margin-top: 25px;
+    font-family: 'RocknRoll One';
+    font-size: x-large;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-right: 0%;
+}
+li{
+    font-weight: 200;
+    list-style: none;
+    margin: 30px 0px;
+}
+
+/*  ** MAIN INFO y CARD */
+main{
+    height: auto;
+
+}
+
+header{
+    background-color: var(--main-dark-green);
+}
+h1{
+    font-family: 'RocknRoll One';
+    letter-spacing: 3px;
+    margin-top: 30px;
+    text-align: center;
+}
+h3{
+    font-weight: 300;
+    margin-top: 15px;
+    text-align: center;
+}
+section{
+    background-color: var(--main-dark-green);
+
+    color: var(--main-white);
+    width: 75%;
+    height: 62%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 0 0 30px 30px;
+}
+img{
+    border-radius: 250px;
+    width: 90%;
+    border: solid var(--main-teal) 5px ;
+    max-width: 270px;
+}
+#indexBack{
+    background: linear-gradient(180deg, rgba(3,66,75,1) 0%, rgba(24, 114, 93, 0.8) 100%),
+    url(../Proyect/images/compute.jpg);
+    background-blend-mode: normal;
+    background-size: cover;
+    height: 36em;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+/* *MEDIA QUERYS */
+@media screen and (min-width: 400px){
+    a{
+        font-size: large;
+    }
+    nav{
+        padding: 0% 5%;
+    }
+    nav li{
+        margin: 30px 7px;
+    }
+
+}
+@media screen and (min-width: 320px){
+    img{
+        max-width: 200px;
+    }
+}
+@media screen and (min-width: 422px){
+    img{
+        max-width: 270px;
+    }
+    section{
+        height: 67%;
+    }
+}
