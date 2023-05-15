@@ -1,3 +1,5 @@
+// *VALIDACIÓN DEL FORMULARIO DE CONTACTO.
+
 document.querySelector(".contactForm").addEventListener('submit', function (event){ 
     event.preventDefault();
     
